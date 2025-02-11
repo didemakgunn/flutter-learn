@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample_screen/screen_demo.dart';
+import 'package:sample_screen/login_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black),
         ),
       ),
-      home: const ScreenDemo(),
+      home: const LoginPage(),
     );
   }
 }
