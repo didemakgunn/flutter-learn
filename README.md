@@ -2,5 +2,4 @@
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="ekranlar/Tasarım/home_page.jpg" alt="drawing" width="200"/> | <img src="ekranlar/Entegrasyon/home_page.png" alt="drawing" width="200"/> |
 | <img src="ekranlar/Tasarım/welcome_page.jpg" alt="drawing" width="200"/> | <img src="ekranlar/Entegrasyon/welcome_page.png" alt="drawing" width="200"/> |
-| Row 2                                                                                                                                          | Data 3                                                                                                                                         |
-| Row 3                                                                                                                                          | Data 5                                                                                                                                         |
+| <img src="ekranlar/Tasarım/create_page.jpg" alt="drawing" width="200"/> | <img src="ekranlar/Entegrasyon/create_page.png" alt="drawing" width="200"/> |
