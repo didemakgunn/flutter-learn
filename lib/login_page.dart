@@ -1,5 +1,8 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'sign_up_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -14,7 +17,6 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
-            SizedBox(height: 20),
             Text(
               "Welcome back!",
               style: TextStyle(
@@ -55,20 +57,38 @@ class LoginPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue),
-                  onPressed: () {},
-                  iconSize: 40,
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.blue, width: 2),
+                  ),
+                  child: IconButton(
+                    icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue),
+                    onPressed: () {},
+                    iconSize: 40,
+                  ),
                 ),
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.google, color: Colors.red),
-                  onPressed: () {},
-                  iconSize: 40,
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.red, width: 2),
+                  ),
+                  child: IconButton(
+                    icon: FaIcon(FontAwesomeIcons.google, color: Colors.red),
+                    onPressed: () {},
+                    iconSize: 40,
+                  ),
                 ),
-                IconButton(
-                  icon: FaIcon(FontAwesomeIcons.apple, color: Colors.black),
-                  onPressed: () {},
-                  iconSize: 40,
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.black, width: 2),
+                  ),
+                  child: IconButton(
+                    icon: FaIcon(FontAwesomeIcons.apple, color: Colors.black),
+                    onPressed: () {},
+                    iconSize: 45,
+                  ),
                 ),
               ],
             ),
@@ -86,6 +106,15 @@ class LoginPage extends StatelessWidget {
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUpPage(),
+                          ),
+                        );
+                      },
                   ),
                 ],
               ),
